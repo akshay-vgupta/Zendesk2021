@@ -43,5 +43,7 @@ Tests are inclued in the Test folder ./ZendeskApplicationTests which mock Restte
 
 I have used [ASCIITable](https://github.com/vdmeer/asciitable) to display data properly in a table format.
 
+Authentication is added via [Dotenv](https://github.com/spacetrippy/Zendesk2021.git) and require a .env file in the root directory of the project. Sent .env file via mail
+
 
 
