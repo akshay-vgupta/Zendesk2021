@@ -45,5 +45,7 @@ I have used [ASCIITable](https://github.com/vdmeer/asciitable) to display data p
 
 Authentication is added via [Dotenv](https://github.com/spacetrippy/Zendesk2021.git) and require a .env file in the root directory of the project. Sent .env file via mail
 
+.env contains username as "ZEN_USER" & password as "ZEN_PASSWORD". The same is used in config file for authentication
+
 
 
