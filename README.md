@@ -1,11 +1,11 @@
 # Zendesk
 ## Zendesk Coding Challenge - Software Engineering
 Console Application that will let you see all the tickers for your account
- A Ticket Viewer that will:
-● Connect to the Zendesk API
-● Request all the tickets for your account
-● Display them in a list
-● Display individual ticket details
+ A Ticket Viewer that will:\
+● Connect to the Zendesk API\
+● Request all the tickets for your account\
+● Display them in a list\
+● Display individual ticket details\
 ● Page through tickets when more than 25 are returned
 
 ## Code style
@@ -26,17 +26,22 @@ Console Application that will let you see all the tickers for your account
 ```bash
 git clone https://github.com/Trance-raver/fetchRewardsDemo.git
 ```
-**2. Run the app using maven**
+**2. Run the app using maven (root directory)**
 
 ```bash
 mvnw spring-boot:run
 ```
-**3. Run Using Jar file**
+**3. Run the tests (root directory)**
 ```
+mvn test
+```
+## Explore the application
 
-```
-## Explore Rest APIs
-The app defines following REST APIs.
+User can view all the tickets or can view a single ticket as well
+
+Tests are inclued in the Test folder ./ZendeskApplicationTests which mock Resttemplate connection.
+
+I have used [ASCIITable](https://github.com/vdmeer/asciitable) to display data properly in a table format.
 
 
 
