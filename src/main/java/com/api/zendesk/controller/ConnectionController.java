@@ -27,7 +27,7 @@ public class ConnectionController {
         } catch (HttpStatusCodeException ex) {
 
             System.out.println("STATUS CODE::"+ex.getRawStatusCode());
-            System.out.println("\nTRY AGAIN:"+ex.getLocalizedMessage());
+            System.out.println("TRY AGAIN:"+ex.getLocalizedMessage());
 
             throw ex;
         }

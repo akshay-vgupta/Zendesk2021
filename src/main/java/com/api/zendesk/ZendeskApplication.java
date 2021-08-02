@@ -30,7 +30,7 @@ public class ZendeskApplication implements CommandLineRunner {
     @Override
     public void run(String... args) {
         System.out.println("\n\n\n\n");
-        System.out.println("::::::::::|  Welcome to Zendesk Ticket Viewer |::::::::::");
+        System.out.println("\t\t::::::::::|  Welcome to Zendesk Ticket Viewer |::::::::::");
         mc.mainMenu();
     }
 

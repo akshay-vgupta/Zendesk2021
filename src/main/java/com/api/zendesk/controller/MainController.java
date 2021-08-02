@@ -46,7 +46,7 @@ public class MainController {
         while (true) {
             System.out.println("\n\n");
             System.out.println("Your options are as follows:::");
-            System.out.println("Press 1 to view all the tickets \nPress 2 to view a single ticket \nPress 3 to exit");
+            System.out.println("** Press 1 to view all the tickets \n** Press 2 to view a single ticket \n** Press 3 to exit");
             int i = scan.nextInt();
             switch (i) {
                 case 1:
@@ -56,7 +56,7 @@ public class MainController {
                     singleTicketMenu(uriSingle);
                     break;
                 case 3:
-                    System.out.println("thanks for using");
+                    System.out.println("\t:::Thanks for using::");
                     System.exit(SpringApplication.exit(configurableApplicationContext));
                     break;
                 default:
@@ -68,7 +68,7 @@ public class MainController {
 
     //Menu for Mutiple Ticket Pages
     public void nextMenu(String prev, String next) {
-        System.out.println("Press 1 for previous Page \nPress 2 for next Page \nPress 3 for main menu");
+        System.out.println("** Press 1 for previous Page \n** Press 2 for next Page \n** Press 3 for main menu");
         int i = scan.nextInt();
         if (i == 1) {
 

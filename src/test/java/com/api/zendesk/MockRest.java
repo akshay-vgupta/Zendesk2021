@@ -39,7 +39,9 @@ public class MockRest {
 
         String response =
                 connectionController.connect("zz");
-        Assert.assertEquals(response, serviceResponse.getBody());
+
+        System.out.println("\nTest 1 Rest Template is working");
+                Assert.assertEquals(response, serviceResponse.getBody());
     }
 
     @Test
@@ -55,6 +57,7 @@ public class MockRest {
         Mockito.when(restTemplate.getForEntity("zz", String.class))
                 .thenThrow(httpClientErrorException);
 
+        System.out.println("\nTest 2 Rest Template with exception :::");
         Assert.assertThrows(HttpClientErrorException.class, () -> connectionController.connect("zz"));
     }
 
@@ -71,6 +74,7 @@ public class MockRest {
         Mockito.when(restTemplate.getForEntity("zz", String.class))
                 .thenThrow(httpClientErrorException);
 
+        System.out.println("\nTest 3 Rest Template with exception :::");
         Assert.assertThrows(HttpServerErrorException.class, () -> connectionController.connect("zz"));
     }
 
