@@ -24,7 +24,7 @@ Console Application that will let you see all the tickers for your account
 **1. Clone the application**
 
 ```bash
-git clone https://github.com/Trance-raver/fetchRewardsDemo.git
+git clone https://github.com/spacetrippy/Zendesk2021.git
 ```
 **2. Run the app using maven (root directory)**
 
