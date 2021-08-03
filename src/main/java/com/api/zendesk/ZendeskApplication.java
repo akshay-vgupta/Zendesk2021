@@ -27,6 +27,7 @@ public class ZendeskApplication implements CommandLineRunner {
         LOG.info("APPLICATION FINISHED");
     }
 
+    // Application starts here
     @Override
     public void run(String... args) {
         System.out.println("\n\n\n\n");

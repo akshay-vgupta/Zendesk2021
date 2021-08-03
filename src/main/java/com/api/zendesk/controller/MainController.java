@@ -37,7 +37,7 @@ public class MainController {
     @Autowired
     private ConfigurableApplicationContext configurableApplicationContext;
 
-
+    //MAIN Menu for user to select options
     public void mainMenu() {
         String uriAll = "https://zccakshay.zendesk.com/api/v2/tickets.json?page[size]=25";
         String uriSingle = "https://zccakshay.zendesk.com/api/v2/tickets.json";
@@ -99,9 +99,10 @@ public class MainController {
 
     }
 
-    //Parse & Process the Ticket
+    //Parse & Process a single Ticket
     public boolean getSingleTicket(String uri, int number) {
 
+        //Use connectionController to retrieve the tickets via resttemplate
         JSONObject obj = new JSONObject(connectionController.connect(uri));
 
         //System.out.println(obj);
@@ -135,6 +136,7 @@ public class MainController {
     //Parse & Process all the Tickets
     public void getAllTickets(String uri) {
         try {
+            //Use connectionController to retrieve the tickets via resttemplate
             JSONObject obj = new JSONObject(connectionController.connect(uri));
             JSONArray arr = obj.getJSONArray("tickets");
             // System.out.println(obj);

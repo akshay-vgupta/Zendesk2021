@@ -34,7 +34,7 @@ public class ConnectionController {
         catch (RestClientException e)
         {
             System.out.println("\nERROR IS::"+e.getMostSpecificCause());
-            //throw e;
+            throw e;
         }
         return obj.toString();
 
